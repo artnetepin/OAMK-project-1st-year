@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Processors
+		</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grigoii Burdin, Artem Netepin">
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+<body onload="animatedLoad()">
+	<nav class="fixednav">
+		<ul>
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li  class="current"><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>	
+	</nav>
+	<div class="mobmenu">
+		<ul class="hide">
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li class="current"><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>
+		<h2 onclick="toggleMenu('div.mobmenu ul', 'show', 'hide')">Menu</h2>
+	</div>
+	<div class="mainfx">
+		<div class="content-right">
+			<img src="icons/cpu.jpg">
+			<h2>Processors, their structure and features</h2>
+			<p>A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic,
+				logical, control and input/output (I/O) operations specified by the instructions. The term has been used in the computer industry at least since the early 1960s. 
+				Traditionally, the term "CPU" refers to a processor, more specifically to its processing unit and control unit (CU), 
+				distinguishing these core elements of a computer from external components such as main memory and I/O circuitry.</p>
+			<p>The form, design and implementation of CPUs have changed over the course of their history, but their fundamental operation remains almost unchanged. 
+				Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, 
+				processor registers that supply operands to the ALU and store the results of ALU operations, 
+				and a control unit that fetches instructions from memory and "executes" them by directing the coordinated operations of the ALU, registers and other components.</p>
+			<p>Most modern CPUs are microprocessors, meaning they are contained on a single integrated circuit (IC) chip.
+				An IC that contains a CPU may also contain memory, peripheral interfaces, and other components of a computer; such integrated devices are variously called micro-controllers or systems on a chip (SoC). 
+				Some computers employ a multi-core processor, which is a single chip containing two or more CPUs called "cores"; in that context, single chips are sometimes referred to as "sockets".
+				Array processors or vector processors have multiple processors that operate in parallel, with no unit considered central.</p>
+			<h4>Operation</h4>
+			<p>The fundamental operation of most CPUs, regardless of the physical form they take, is to execute a sequence of stored instructions that is called a program. 
+				The instructions to be executed are kept in some kind of computer memory. Nearly all CPUs follow the fetch, decode and execute steps in their operation, which are collectively known as the instruction cycle.</p>
+			<p>After the execution of an instruction, the entire process repeats, with the next instruction cycle normally fetching the next-in-sequence instruction because of the incremented value in the program counter. 
+				If a jump instruction was executed, the program counter will be modified to contain the address of the instruction that was jumped to and program execution continues normally. 
+				In more complex CPUs, multiple instructions can be fetched, decoded, and executed simultaneously. This section describes what is generally referred to as the "classic RISC pipeline",
+				which is quite common among the simple CPUs used in many electronic devices (often called microcontroller). It largely ignores the important role of CPU cache, and therefore the access stage of the pipeline.</p>
+			<p>Some instructions manipulate the program counter rather than producing result data directly; such instructions are generally called "jumps" and facilitate program behavior like loops,
+				conditional program execution (through the use of a conditional jump), and existence of functions. In some processors, some other instructions change the state of bits in a "flags" register.
+				These flags can be used to influence how a program behaves, since they often indicate the outcome of various operations. For example, 
+				in such processors a "compare" instruction evaluates two values and sets or clears bits in the flags register to indicate which one is greater or whether they are equal; 
+				one of these flags could then be used by a later jump instruction to determine program flow.</p>	
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content-left">
+			<img src="icons/cpu-1.jpg">
+			<h4>Fetch</h4>
+			<p>The first step, fetch, involves retrieving an instruction (which is represented by a number or sequence of numbers) from program memory. 
+			The instruction's location (address) in program memory is determined by a program counter (PC), which stores a number that identifies the address of the next instruction to be fetched. 
+			After an instruction is fetched, the PC is incremented by the length of the instruction so that it will contain the address of the next instruction in the sequence.
+			Often, the instruction to be fetched must be retrieved from relatively slow memory, causing the CPU to stall while waiting for the instruction to be returned. 
+			This issue is largely addressed in modern processors by caches and pipeline architectures.</p>
+			<h4>Decode</h4>
+			<p>The instruction that the CPU fetches from memory determines what the CPU will do. 
+				In the decode step, performed by the circuitry known as the instruction decoder, the instruction is converted into signals that control other parts of the CPU.</p>
+			<p>The way in which the instruction is interpreted is defined by the CPU's instruction set architecture (ISA). Often, one group of bits (that is, a "field") within the instruction, 
+				called the opcode, indicates which operation is to be performed, while the remaining fields usually provide supplemental information required for the operation, such as the operands. 
+				Those operands may be specified as a constant value (called an immediate value), or as the location of a value that may be a processor register or a memory address, as determined by some addressing mode.</p>
+			<p>In some CPU designs the instruction decoder is implemented as a hardwired, unchangeable circuit. 
+				In others, a microprogram is used to translate instructions into sets of CPU configuration signals that are applied sequentially over multiple clock pulses.
+				In some cases the memory that stores the microprogram is rewritable, making it possible to change the way in which the CPU decodes instructions.</p>
+			<h4>Execute</h4>
+			<p>After the fetch and decode steps, the execute step is performed. Depending on the CPU architecture, this may consist of a single action or a sequence of actions. 
+				During each action, various parts of the CPU are electrically connected so they can perform all or part of the desired operation and then the action is completed, typically in response to a clock pulse.
+				Very often the results are written to an internal CPU register for quick access by subsequent instructions. In other cases results may be written to slower, but less expensive and higher capacity main memory.</p>
+			<p>For example, if an addition instruction is to be executed, the arithmetic logic unit (ALU) inputs are connected to a pair of operand sources (numbers to be summed), 
+				the ALU is configured to perform an addition operation so that the sum of its operand inputs will appear at its output, and the ALU output is connected to storage (e.g., a register or memory) 
+				that will receive the sum. When the clock pulse occurs, the sum will be transferred to storage and, if the resulting sum is too large (i.e., it is larger than the ALU's output word size), 
+				an arithmetic overflow flag will be set.</p>
+			<div style="clear:both;"></div>
+		</div>		
+	</div>
+	<div id="123" class="hideUp"><h4 onclick="scrollToTop()">UP</h4></div>
+	<script type="text/javascript" src="script.js"> 
+	</script>
+</body>
+</html>

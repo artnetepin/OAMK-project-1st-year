@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			BIOS and buses
+		</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grigoii Burdin, Artem Netepin">
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+<body onload="animatedLoad()">
+	<nav class="fixednav">
+		<ul>
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li  class="current"><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>	
+	</nav>
+	<div class="mobmenu">
+		<ul class="hide">
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li  class="current"><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>
+		<h2 onclick="toggleMenu('div.mobmenu ul', 'show', 'hide')">Menu</h2>
+	</div>
+	<div class="mainfx">
+		<div class="content-right">
+			<img src="icons/bus.jpg">
+			<h2>Computer buses</h2>
+			<p>Computer bus is a communication system that transfers data between components inside a computer, 
+				or between computers. This expression covers all related hardware components (wire, optical fiber, etc.) and software, including communication protocols.</p>
+			<p>Early computer buses were parallel electrical wires with multiple connections, but the term is now used for any physical arrangement that provides the same logical functionality as a parallel electrical bus.
+				Modern computer buses can use both parallel and bit serial connections, and can be wired in either a multidrop (electrical parallel) or daisy chain topology, or connected by switched hubs, 
+				as in the case of USB.</p>
+			<h4>Internal bus</h4>
+			<p>The internal bus, also known as internal data bus, memory bus, connects all the internal components of a computer, such as CPU and memory, to the motherboard. 
+			Internal data buses are also referred to as a local bus, because they are intended to connect to local devices. 
+			This bus is typically rather quick and is independent of the rest of the computer operations.</p>
+			<h4>External bus</h4>
+			<p>The external bus, or expansion bus, is made up of the electronic pathways that connect the different external devices, such as printer etc., to the computer.</p>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content-left">
+			<img src="icons/motherboard.jpg">
+			<h2>Motherboard</h2>
+			<p>Motherboard (mainboard, mobo) is the main printed circuit board (PCB) found in computers and other expandable systems.
+				It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit (CPU) and memory, 
+				and provides connectors for other peripherals. Unlike a backplane, a motherboard contains significant sub-systems such as the processor and other components.</p>
+			<p>Motherboard specifically refers to a PCB with expansion capability and as the name suggests, this board is often referred to as the "mother" of all components attached to it, 
+				which often include sound cards, video cards, network cards, hard drives, or other forms of persistent storage; 
+				TV tuner cards, cards providing extra USB or FireWire slots and a variety of other custom components.</p>
+			<h4>Form factor</h4>
+			<p>Motherboards are produced in a variety of sizes and shapes called computer form factor, some of which are specific to individual computer manufacturers. 
+			However, the motherboards used in IBM-compatible systems are designed to fit various case sizes. As of 2007, most desktop computer motherboards use the ATX standard form factor — 
+			even those found in Macintosh and Sun computers, which have not been built from commodity components. A case's motherboard and PSU form factor must all match, 
+			though some smaller form factor motherboards of the same family will fit larger cases. For example, an ATX case will usually accommodate a microATX motherboard.</p>
+			<p>Laptop computers generally use highly integrated, miniaturized and customized motherboards. This is one of the reasons that laptop computers are difficult to upgrade and expensive to repair. 
+			Often the failure of one laptop component requires the replacement of the entire motherboard, which is usually more expensive than a desktop motherboard due to the large number of integrated components.</p>
+			<h4>Integrated peripherals</h4>
+			<p>With the steadily declining costs and size of integrated circuits, it is now possible to include support for many peripherals on the motherboard.
+				By combining many functions on one PCB, the physical size and total cost of the system may be reduced; highly integrated motherboards are thus especially popular in small form factor and budget computers.</p>
+			<ul>
+				<li>disk controllers for a floppy disk drive, up to 2 PATA drives, and up to 6 SATA drives (including RAID 0/1 support)</li>
+				<li>integrated graphics controller supporting 2D and 3D graphics, with VGA and TV output</li>
+				<li>integrated sound card supporting 8-channel (7.1) audio and S/PDIF output</li>
+				<li>Fast Ethernet network controller for 10/100 MBit networking</li>
+				<li>USB 2.0 controller supporting up to 12 USB ports</li>
+				<li>IrDA controller for infra-red data communication (e.g. with an IrDA-enabled cellular phone or printer)</li>
+				<li>Temperature, voltage, and fan-speed sensors that allow software to monitor the health of computer components.</li>
+			</ul>
+			<h4>Peripheral card slots</h4>
+			<p>A typical motherboard will have a different number of connections depending on its standard and form factor.</p>
+			<p>A standard, modern ATX motherboard will typically have two or three PCI-Express 16x connection for a graphics card, one or two legacy PCI slots for various expansion cards, 
+				and one or two PCI-E 1x (which has superseded PCI). A standard EATX motherboard will have two to four PCI-E 16x connection for graphics cards, and a varying number of PCI and PCI-E 1x slots. 
+				It can sometimes also have a PCI-E 4x slot (will vary between brands and models).</p>
+			<p>Some motherboards have two or more PCI-E 16x slots, to allow more than 2 monitors without special hardware, or use a special graphics technology called SLI (for Nvidia) and Crossfire (for AMD). 
+				These allow 2 to 4 graphics cards to be linked together, to allow better performance in intensive graphical computing tasks, such as gaming, video editing, etc.</p>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content-right">
+			<img src="icons/bios.png">
+			<h2>The BIOS</h2>
+			<p>The BIOS (an acronym for Basic Input/Output System) is a type of firmware used to perform hardware initialization during the booting process (power-on startup) on IBM PC compatible computers, 
+				and to provide runtime services for operating systems and programs. The BIOS firmware is built into personal computers (PCs), and it is the first software they run when powered on. 
+				Originally proprietary to the IBM PC, the BIOS has been reverse engineered by companies looking to create compatible systems and the interface of that original system serves as a de facto standard.</p>
+			<p>The fundamental purposes of the BIOS in modern PCs are to initialize and test the system hardware components, and to load a boot loader or an operating system from a mass memory device. 
+				The BIOS additionally provides an abstraction layer for the hardware, i.e., a consistent way for application programs and operating systems to interact with the keyboard, display, 
+				and other input/output (I/O) devices. Variations in the system hardware are hidden by the BIOS from programs that use BIOS services instead of directly accessing the hardware.</p>
+			<p>Most BIOS implementations are specifically designed to work with a particular computer or motherboard model, by interfacing with various devices that make up the complementary system chipset. 
+				Originally, BIOS firmware was stored in a ROM chip on the PC motherboard; in modern computer systems, 
+				the BIOS contents are stored on flash memory so it can be rewritten without removing the chip from the motherboard. 
+				This allows easy updates to the BIOS firmware so new features can be added or bugs can be fixed, but it also creates a possibility for the computer to become infected with BIOS rootkits.</p>
+			<p>Unified Extensible Firmware Interface (UEFI) was designed as a successor to BIOS, aiming to address its technical shortcomings. As of 2014, new PC hardware predominantly ships with UEFI firmware.</p>
+			<h4>Setup utility</h4>
+			<p>Historically, the BIOS in the IBM PC and XT had no built-in user interface. The BIOS versions in earlier PCs (XT-class) were not software configurable; 
+				instead, users set the options via DIP switches on the motherboard. Later computers, including all IBM-compatibles with 80286 CPUs, 
+				had a battery-backed nonvolatile BIOS memory (CMOS RAM chip) that held BIOS settings.[21] These settings, such as video-adapter type, memory size, 
+				and hard-disk parameters, could only be configured by running a configuration program from a disk, not built into the ROM. 
+				A special "reference diskette" was inserted in an IBM AT to configure settings such as memory size.</p>
+			<p>Early BIOS versions did not have passwords or boot-device selection options. The BIOS was hard-coded to boot from the first floppy drive, or, if that failed, the first hard disk.
+				Access control in early AT-class machines was by a physical key lock switch (which was not hard to defeat if the computer case could be opened). Anyone who could switch on the computer could boot it.</p>
+			<p>Later, 386-class computers started integrating the BIOS setup utility in the ROM itself, alongside the BIOS code; 
+				these computers usually boot into the BIOS setup utility if a certain key or key combination is pressed, otherwise the BIOS POST and boot process are executed.</p>
+			<p>A modern BIOS setup utility has a menu-based user interface (UI) accessed by pressing a certain key on the keyboard when the PC starts. Usually the key is advertised for short time during the early startup, 
+				for example "Press F1 to enter CMOS setup". The actual key depends on specific hardware. Features present in the BIOS setup utility typically include:</p>
+			<ul>
+			<li>Configuring the hardware components, including setting their various operating modes and frequencies (
+				for example, selecting how the storage controllers are visible to the operating system, or overlocking the CPU)</li>
+			<li>Setting the system clock</li>
+			<li>Enabling or disabling system components</li>
+			<li>Selecting which devices are potential boot devices, and in which order booting from them will be attempted</li>
+			<li>Setting various passwords, such as a password for securing access to the BIOS user interface functions itself and preventing malicious users from booting the system from unauthorized portable storage devices,
+				a password for booting the system, or a hard disk drive password that limits access to it and stays assigned even if the hard disk drive is moved to another computer.</li>
+			</ul>
+			<h4>Reprogramming</h4>
+			<p>In modern PCs the BIOS is stored in rewritable memory, allowing the contents to be replaced or "rewritten". 
+				This rewriting of the contents is sometimes termed flashing, based on the common use of a kind of EEPROM known technically as "flash EEPROM" and colloquially as "flash memory".
+				It can be done by a special program, usually provided by the system's manufacturer, or at POST, with a BIOS image in a hard drive or USB flash drive. 
+				A file containing such contents is sometimes termed "a BIOS image".	A BIOS might be reflashed in order to upgrade to a newer version to fix bugs or provide improved performance or to support newer hardware, 
+				or a reflashing operation might be needed to fix a damaged BIOS.</p>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<div id="123" class="hideUp"><h4 onclick="scrollToTop()">UP</h4></div>
+	<script type="text/javascript" src="script.js"> 
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Connections
+		</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grigoii Burdin, Artem Netepin">
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+<body onload="animatedLoad()">
+	<nav class="fixednav">
+		<ul>
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li  class="current"><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>	
+	</nav>
+	<div class="mobmenu">
+		<ul class="hide">
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li  class="current"><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>
+		<h2 onclick="toggleMenu('div.mobmenu ul', 'show', 'hide')">Menu</h2>
+	</div>
+	<div class="mainfx">
+		<div class="content-right">
+			<img src="icons/wired.jpg">
+			<h2>Connections</h2>
+			<p>A peripheral is a "device that is used to put information into or get information out of the computer."</p>
+			<p>There are two different types of peripherals: input devices, which interact with or send data to the computer (mouse, keyboards, etc.), 
+				and output devices, which provide output to the user from the computer (monitors, printers, etc.). Some peripherals, such as touchscreens, 
+				may combine different devices into a single hardware component that can be used both as an input and output device.</p>
+			<p>A peripheral device is generally defined as any auxiliary device such as a computer mouse or keyboard that connects to and works with the computer in some way. 
+				Other examples of peripherals are image scanners, tape drives, microphones, loudspeakers, webcams, and digital cameras. Many modern devices, such as digital watches, 
+				smartphones and tablet computers, have interfaces that allow them to be used as a peripheral by desktop computers, although they are not host-dependent in the same way as other peripheral devices.</p>
+			<p>Common input peripherals include keyboards, computer mice, graphic tablets, touchscreens, barcode readers, image scanners, microphones, webcams, game controllers, light pens, and digital cameras.
+			Common output peripherals include computer displays, printers, projectors, and computer speakers.</p>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content-left">
+			<img src="icons/wireless.jpg">
+			<h2>Wireless connections</h2>
+			<p>A wireless network is any type of computer network that uses wireless data connections for connecting network nodes.</p>
+			<p>Wireless networking is a method by which homes, telecommunications networks and enterprise (business) installations avoid the costly process of introducing cables into a building, 
+				or as a connection between various equipment locations. Wireless telecommunications networks are generally implemented and administered using radio communication. 
+				This implementation takes place at the physical level (layer) of the OSI model network structure.</p>
+			<div style="clear:both;"></div>
+		</div>		
+	</div>
+	<div id="123" class="hideUp"><h4 onclick="scrollToTop()">UP</h4></div>
+	<script type="text/javascript" src="script.js"> 
+	</script>
+</body>
+</html>

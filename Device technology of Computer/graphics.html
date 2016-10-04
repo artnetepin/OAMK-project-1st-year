@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Graphics
+		</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grigoii Burdin, Artem Netepin">
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+<body onload="animatedLoad()">
+	<nav class="fixednav">
+		<ul>
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li   class="current"><a href="graphics.html" >Graphics</a></li>
+		</ul>	
+	</nav>
+	<div class="mobmenu">
+		<ul class="hide">
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li  class="current"><a href="graphics.html" >Graphics</a></li>
+		</ul>
+		<h2 onclick="toggleMenu('div.mobmenu ul', 'show', 'hide')">Menu</h2>
+	</div>
+	<div class="mainfx">
+		<div class="content-right">
+			<img src="icons/graphics.jpg">
+			<h2>Video card</h2>
+			<p>A video card (also called a video adapter) is an expansion card which generates a feed of output images to a display (such as a computer monitor). 
+				Frequently, these are advertised as discrete or dedicated graphics cards, emphasizing the distinction between these and integrated graphics.
+				Within the industry, video cards are sometimes called graphics add-in-boards, abbreviated as AIBs, with the word "graphics" usually omitted.</p>
+			<p>As an alternative to the use of a video card, video hardware can be integrated into the motherboard or the CPU. Both approaches can be called integrated graphics.
+				Motherboard-based implementations are sometimes called "on-board video" while CPU-based implementations are known as accelerated processing units (APUs).
+				Almost all desktop computer motherboards with integrated graphics allow the disabling of the integrated graphics chip in BIOS, and have a PCI, 
+				or PCI Express (PCI-E) slot for adding a higher-performance graphics card in place of the integrated graphics.
+				The ability to disable the integrated graphics sometimes also allows the continued use of a motherboard on which the on-board video has failed.
+				Sometimes both the integrated graphics and a dedicated graphics card can be used simultaneously to feed separate displays. 
+				The main advantages of integrated graphics include cost, compactness, and simplicity and low energy consumption. 
+				The performance disadvantage of integrated graphics arises because the graphics processor shares system resources with the CPU.
+				A dedicated graphics card has its own random access memory (RAM), its own cooling system, and dedicated power regulators, 
+				with all components designed specifically for processing video images. Upgrading to a dedicated graphics card offloads work from the CPU and system RAM,
+				so not only will graphics processing be faster, but the computer's overall performance may also improve.</p>
+			<p>Both of the dominant CPU makers, AMD and Intel, are moving to APUs. One of the reasons is that graphics processors are powerful parallel processors,
+				and placing them on the CPU die allows their parallel processing ability to be harnessed for various computing tasks in addition to graphics processing. 
+				APUs are the newer integrated graphics technology and, as costs decline, will probably be used instead of integrated graphics on the motherboard in most 
+				future low and mid-priced home and business computers. As of late 2013, the best APUs provide graphics processing approaching mid-range mobile video cards
+				and are adequate for casual gaming. Users seeking the highest video performance for gaming or other graphics-intensive uses should still choose computers 
+				with dedicated graphics cards.</p>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content-left">
+			<img src="icons/video-card.jpg">
+			<h2>Components of the video adapter</h2>
+			<p>A modern video card consists of a printed circuit board on which the components are mounted. These include:</p>
+			<ul>
+				<li>Graphics Processing Unit - a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the building 
+					of images in a frame buffer intended for output to a display. Because of the large degree of programmable computational complexity for such a task,
+					a modern video card is also a computer unto itself.</li>
+				<li>Heat sink - mounted on most modern graphics cards. A heat sink spreads out the heat produced by the graphics processing unit evenly throughout
+					the heat sink and unit itself. The heat sink commonly has a fan mounted as well to cool the heat sink and the graphics processing unit.
+					Not all cards have heat sinks, for example, some cards are liquid cooled, and instead have a waterblock; additionally, cards from the 1980s and early 1990s
+					did not produce much heat, and did not require heatsinks.</li>
+				<li>Video BIOS or firmware - contains a minimal program for initial set up and control of the video card. It may contain information on the memory timing, 
+					operating speeds and voltages of the graphics processor, RAM, and other details which can sometimes be changed. 
+					The usual reason for doing this is to overclock the video card to allow faster video processing speeds, however, 
+					this has the potential to irreversibly damage the card with the possibility of cascaded damage to the motherboard.
+					The modern Video BIOS does not support all the functions of the video card, being only sufficient to identify and initialize the card to display
+					one of a few frame buffer or text display modes. It does not support YUV to RGB translation, video scaling, pixel copying, compositing or any of the multitude
+					of other 2D and 3D features of the video card.</li>
+				<li>Video memory -  memory capacity of most modern video cards ranges from 1 GB to 12 GB. 
+					Since video memory needs to be accessed by the GPU and the display circuitry, it often uses special high-speed or multi-port memory,
+					such as VRAM, WRAM, SGRAM, etc. Around 2003, the video memory was typically based on DDR technology. During and after that year, manufacturers moved towards DDR2,
+					GDDR3, GDDR4 and GDDR5. The effective memory clock rate in modern cards is generally between 1 GHz to 7 GHz.
+					Video memory may be used for storing other data as well as the screen image, such as the Z-buffer, which manages the depth coordinates in 3D graphics,
+					textures, vertex buffers, and compiled shader programs.</li>
+				<li>RAMDAC, or Random Access Memory Digital-to-Analog Converter - converts digital signals to analog signals for use by a computer display that uses 
+					analog inputs such as Cathode ray tube (CRT) displays. The RAMDAC is a kind of RAM chip that regulates the functioning of the graphics card. 
+					Depending on the number of bits used and the RAMDAC-data-transfer rate, the converter will be able to support different computer-display refresh rates. 
+					With CRT displays, it is best to work over 75 Hz and never under 60 Hz, in order to minimize flicker. (With LCD displays, flicker is not a problem.
+					Due to the growing popularity of digital computer displays and the integration of the RAMDAC onto the GPU die, it has mostly disappeared as a discrete component.
+					All current LCD/plasma monitors and TVs and projectors with only digital connections, work in the digital domain and do not require a RAMDAC for those connections.
+					There are displays that feature analog inputs (VGA, component, SCART etc.) only. These require a RAMDAC,
+					but they reconvert the analog signal back to digital before they can display it, 
+					with the unavoidable loss of quality stemming from this digital-to-analog-to-digital conversion. With VGA standard being phased out in favor of digital,
+					RAMDACs will begin to disappear from video cards.</li>
+				<li>Output interfaces</li>
+				<li>Motherboard interfaces</li>
+			</ul>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<div id="123" class="hideUp"><h4 onclick="scrollToTop()">UP</h4></div>
+	<script type="text/javascript" src="script.js"> 
+	</script>
+</body>
+</html>

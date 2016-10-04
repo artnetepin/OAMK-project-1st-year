@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Laptops
+		</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grigoii Burdin, Artem Netepin">
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+<body onload="animatedLoad()">
+	<nav class="fixednav">
+		<ul>
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li   class="current"><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>	
+	</nav>
+	<div class="mobmenu">
+		<ul class="hide">
+			<li><a href="index.html" >Main</a></li>
+			<li><a href="pc.html">PC structure</a></li>
+			<li><a href="cpu.html">Processors</a></li>
+			<li><a href="bios.html">Motherboard</a></li>
+			<li><a href="memory.html">Memory</a></li>
+			<li  class="current"><a href="laptop.html">Laptops</a></li>
+			<li><a href="connection.html">Connections</a></li>
+			<li><a href="diskdrive.html">Disk drivers</a></li>
+			<li><a href="graphics.html" >Graphics</a></li>
+		</ul>
+		<h2 onclick="toggleMenu('div.mobmenu ul', 'show', 'hide')">Menu</h2>
+	</div>
+	<div class="mainfx">
+		<div class="content-right">
+			<img src="icons/laptop.jpg">
+			<h2>Laptop computer</h2>
+			<p>A laptop, often called a notebook, is a portable personal computer with a clamshell form factor, suitable for mobile use.
+				Although originally there was a distinction between laptops and notebooks, the former being bigger and heavier than the latter, in modern usage there is often no longer any difference.
+				Laptops are commonly used in a variety of settings, such as at work, in education, and for personal multimedia.</p>
+			<p>A laptop combines the components and inputs of a desktop computer, including the display, speakers, a keyboard, and pointing devices (such as a touchpad or trackpad) into a single unit. 
+				Most modern-day laptops also have integrated webcams and built-in microphones. The device can be powered either from a rechargeable battery or by mains electricity from an AC adapter. 
+				Laptops are diverse devices and specialized kinds, such as rugged notebook or convertible computers, have been optimized for specific uses.
+				The hardware specifications significantly vary between different types, makes, and models.</p>
+			<p>Portable computers, which later developed into modern laptops, were originally considered to be a small niche market, mostly for specialized field applications, such as in the military, 
+				for accountancy, or for sales representatives. As portable computers became closer to the modern laptop, they became widely used for a variety of purposes.</p>
+			<h4>Advantages</h4>
+			<p>Portability is usually the first feature mentioned in any comparison of laptops versus desktop PCs. Physical portability allows that a laptop can be used in many places— not only at home and at the office, 
+				but also during commuting and flights, in coffee shops, in lecture halls and libraries, at clients' location or at a meeting room, etc. The portability feature offers several distinct advantages:</p>
+			<ul>
+				<li>Productivity: Using a laptop in places where a desktop PC cannot be used, and at times that would otherwise be wasted. For example, an office worker managing their e-mails during an hour-long commute by train, 
+					or a student doing his/her homework at the university coffee shop during a break between lectures.</li>
+				<li>Immediacy: Carrying a laptop means having instant access to various information, personal and work files. Immediacy allows better collaboration between co-workers or students, 
+					as a laptop can be flipped open to present a problem or a solution anytime, anywhere.</li>
+				<li>Up-to-date information: If a person has more than one desktop PC, a problem of synchronization arises: changes made on one computer are not automatically propagated to the others.
+					There are ways to resolve this problem, including physical transfer of updated files (using a USB flash memory stick or CDRs) or using synchronization software over the Internet.
+					However, using a single laptop at both locations avoids the problem entirely, as the files exist in a single location and are always up-to-date.</li>
+				<li>Connectivity: A proliferation of Wi-Fi wireless networks and cellular broadband data services (HSDPA, EVDO and others)
+					combined with a near-ubiquitous support by laptops means that a laptop can have easy Internet and local network connectivity while remaining mobile.
+					Wi-Fi networks and laptop programs are especially widespread at university campuses.</li>
+			</ul>
+			<p>Other advantages of laptops:</p>
+			<ul>
+				<li>Laptops are smaller than desktop PCs. This is beneficial when space is at a premium, for example in small apartments and student dorms. When not in use, a laptop can be closed and put away.</li>
+				<li>Low power consumption: Laptops are several times more power-efficient than desktops. A typical laptop uses 20–120 W, compared to 100–800 W for desktops. This could be particularly beneficial for businesses
+					(which run hundreds of personal computers, multiplying the potential savings) and homes where there is a computer running 24/7 (such as a home media server, print server, etc.)</li>
+				<li>Laptops are often quieter than desktops, due both to the components (quieter, slower 2.5-inch hard drives) and to less heat production leading to use of fewer and slower cooling fans.</li>
+				<li>Battery: a charged laptop can continue to be used in case of a power outage and is not affected by short power interruptions and blackouts. 
+					A desktop PC needs a UPS to handle short interruptions, blackouts and spikes; achieving on-battery time of more than 20–30 minutes for a desktop PC requires a large and expensive UPS.</li>
+				<li>All-in-One: designed to be portable, laptops have everything integrated into the chassis. For desktops (excluding all-in-ones) this is divided into the desktop, keyboard, mouse, display,
+					and optional peripherals such as speakers.</li>
+			</ul>
+			<div style="clear:both;"></div>
+		</div>
+		
+	</div>
+	<div id="123" class="hideUp"><h4 onclick="scrollToTop()">UP</h4></div>
+	<script type="text/javascript" src="script.js"> 
+	</script>
+</body>
+</html>
